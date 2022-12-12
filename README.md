@@ -1,7 +1,7 @@
 # de.NBI / ELIXIR-DE BioHackathon 2022
 de.NBI Biohackathon 2022 Projects Overview
 
-## Projects 
+## Projects
 
 - [MIAPPE Wizard](projects/miappe_wizard): Enabling easy creation of MIAPPE-compliant ISA metadata for Plant Phenotyping Experiments 	Sebastian Beier (FZ Jülich) and Daniel Arend (IPK Gatersleben)
 - [Extending the NFDI4Microbiota Knowledge Base](projects/nfdimicrobiota_kb) 	Justine Vandendrope (ZB MED) and Kassian Kobert (Bielefeld University)
@@ -11,7 +11,7 @@ de.NBI Biohackathon 2022 Projects Overview
 - [Towards FAIR Computational Workflows - Improving Provenance Collection](projects/fair_workflows) 	Mahnoor Zulfiqar (University of Jena) and Kristian Peters (IPB Halle)
 - [Interactive data analysis and visualization in the web browser](projects/interactive_data_analyis_and_vis) 	Asis Hallab (FZ Jülich) and Ata Ul Haleem (FZ Jülich)
 - [DataPLANT - Facilitating Research Data Management to combat the reproducibility crisis](projects/dataplant)	Elisa Senger (FZ Jülich) and Lukas Weil (TU Kaiserslautern)
-- [The ELIXIR::GA4GH Cloud](projects/) 	Alexander Kanitz (ELIXIR-CH)
+- [The ELIXIR::GA4GH Cloud](projects/elixir_ga4gh_cloud) 	Alexander Kanitz (ELIXIR-CH)
 - [Improving interoperability support for authoring, editing and conversion of mzTab-M for Lipidomics Tools](projects/mztabm) 	Eduardo Jacobo Miranda Ackerman (MPI-CBG Dresden) and Daniel Krause (FZ Borstel)
 - [Towards a minimum information checklist for biomedical research projects with sensitive human data (only remote)](projects/mi_sensitive_human_data) 	Pinar Alper (ELIXIR-LU), Vilém Ded (ELIXIR-LU), Frédéric Erard (ELIXIR-CH) and Valérie Barbié (ELIXIR-CH)
 
