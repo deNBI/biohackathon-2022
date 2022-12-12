@@ -3,7 +3,7 @@ de.NBI Biohackathon 2022 Projects Overview
 
 ## Projects
 
-- [MIAPPE Wizard](projects/miappe_wizard): Enabling easy creation of MIAPPE-compliant ISA metadata for Plant Phenotyping Experiments 	Sebastian Beier (FZ Jülich) and Daniel Arend (IPK Gatersleben)
+- [MIAPPE Wizard: Enabling easy creation of MIAPPE-compliant ISA metadata for Plant Phenotyping Experiments](projects/miappe_wizard) 	Sebastian Beier (FZ Jülich) and Daniel Arend (IPK Gatersleben)
 - [Extending the NFDI4Microbiota Knowledge Base](projects/nfdimicrobiota_kb) 	Justine Vandendrope (ZB MED) and Kassian Kobert (Bielefeld University)
 - [Mapping the training journey in Bioinformatics](projects/training) 	Lisanna Paladin (EMBL Heidelberg) and Pablo Mier (University of Mainz)
 - [Establishing best practice guidelines for imaging-based spatially resolved transcriptomics data](projects/bp_imaging_transcriptomics) 	Naveed Ishaque (Berlin Institute of Health at the Charité) and Louis Kümmerle (Helmholtz Center München)
