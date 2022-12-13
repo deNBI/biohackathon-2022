@@ -1,0 +1,9 @@
+channels:
+  - defaults
+dependencies:
+  - python
+  - wget
+  - pip
+  - pip:
+      - click_loglevel
+      - linkml
