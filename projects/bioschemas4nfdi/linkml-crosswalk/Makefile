@@ -9,6 +9,7 @@ all: run
 
 ghga.yaml: .env_created
 	$(ENV) wget https://raw.githubusercontent.com/ghga-de/ghga-metadata-schema/main/src/schema/ghga.yaml
+	patch ghga.yaml < ghga.patch
 
 .PHONY:run
 run: ghga.yaml .env_created
