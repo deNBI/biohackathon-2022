@@ -1,0 +1,8 @@
+@prefix GHGA: <https://w3id.org/GHGA/> .
+
+<http://example.com/1> a GHGA:study ;
+    GHGA:title "foo" ;
+    GHGA:alias "alias" ;
+    GHGA:description "description" ;
+    GHGA:type "epigenetics" ;
+    GHGA:affilliation "some institute" .
