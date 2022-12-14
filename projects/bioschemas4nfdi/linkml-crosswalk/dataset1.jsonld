@@ -1,0 +1,18 @@
+{
+    "@context":"https://schema.org",
+    "@type":"Dataset",
+    "http://purl.org/dc/terms/conformsTo": { "@type": "CreativeWork", "@id": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE" },
+    "description":"Making metadata available",
+    "name":"Dataset for head and neck cancer RNA",
+    "url":"http://example.org/dataset/EGAD00001008861",
+    "distribution": "FASTQ",
+    "datePublished": "2022-10-06",
+    "license":"https://creativecommons.org/publicdomain/zero/1.0/",
+    "identifier":"EGAD00001008861",
+    "keywords": [ "Transcriptome Profiling By High-Throughput Sequencing", "Cancer_genomics"],
+    "alternateName": "Comprehensive Genomic and Transcriptomic Analysis of Rare Cancers for Guiding of Therapy (H021)",
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Study"
+    }
+  }
