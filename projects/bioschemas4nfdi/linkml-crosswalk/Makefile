@@ -7,15 +7,14 @@ all: run
 	conda env create -n $(NAME) -f environment.yaml
 	touch .env_created
 
-ghga.yaml: .env_created
-	$(ENV) wget https://raw.githubusercontent.com/ghga-de/ghga-metadata-schema/main/src/schema/ghga.yaml
-	patch ghga.yaml < ghga.patch
+schema.yaml: .env_created
+	$(ENV) wget https://raw.githubusercontent.com/sbilge/biohackathon-2022/exact_mappings/projects/bioschemas4nfdi/linkml-crosswalk/schema.yaml
 
 .PHONY:run
-run: ghga.yaml .env_created
-	$(ENV) ./translate.py ghga.yaml test.ttl UNUSED
+run: schema.yaml .env_created
+	$(ENV) ./translate.py schema.yaml test.ttl
 
 .PHONY:clean
 clean:
 	conda env remove -n $(NAME)
-	rm ghga.yaml .env_created
+	rm schema.yaml .env_created
