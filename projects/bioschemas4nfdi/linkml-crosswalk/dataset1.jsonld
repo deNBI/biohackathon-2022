@@ -12,7 +12,7 @@
     "keywords": [ "Transcriptome Profiling By High-Throughput Sequencing", "Cancer_genomics"],
     "alternateName": "Comprehensive Genomic and Transcriptomic Analysis of Rare Cancers for Guiding of Therapy (H021)",
     "isPartOf": {
-        "@type": "CreativeWork",
+        "@type": "DataCatalog",
         "name": "Study"
     }
   }
