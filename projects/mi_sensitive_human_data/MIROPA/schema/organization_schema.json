@@ -1,0 +1,49 @@
+{
+    "$id": "https://someTODOurl/schema/organization_schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "MIROPA organization schema",
+    "description": "Legal or physical entity corresponding to a business or administration.",
+    "type": "object",
+    "properties": {
+      "@context": {
+        "description": "The JSON-LD context",
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object"
+          },
+          {
+            "type": "array"
+          }
+        ]
+      },  
+      "@id": {
+        "description": "The JSON-LD identifier",
+        "type": "string", 
+        "format": "uri"
+      },
+      "@type": {
+        "description": "The JSON-LD type",
+        "type": "string",
+        "const": "Organization"
+      },
+      "name": {
+        "description": "The name of the organization.",
+        "type" :  "string"
+      },
+      "email": {
+        "description": "An electronic mail address for the organization.",
+        "type" :  "string",
+        "format": "email"
+      },
+      "address": {
+        "description": "The place where the organization is located.",
+        "type" : "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": [ "name", "email" ]
+  }
+  
