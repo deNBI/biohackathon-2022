@@ -1,0 +1,78 @@
+{
+    "$id": "http://some-github-repo.url/schemas/activity",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "MIROPA schema for Activity entity",
+    "description": "Data processing activity as defined by GDPR",
+    "type": "object",
+    "properties": {
+      "@context": {
+        "description": "The JSON-LD context",
+        "type": "array",
+        "items": {
+            "type": "string",
+            "enum": [
+              "https://w3id.org/dpv#Processing"
+            ]
+        }
+      },
+      "@id": {
+        "description": "The JSON-LD identifier",
+        "type": "string",
+        "format": "uri" 
+      },
+      "@type": {
+        "description": "The JSON-LD type",
+        "type": "string",
+        "const": "Activity"
+      },
+      "name": {
+        "description": "Name of the activity performed",
+        "type" :  "string"
+      },
+      "start": {
+        "description": "Either date referring to exact activity start or start criteria, e.g. start of the project, conclusion of an agreement covering the activity. This time points to an acquisition of legal ground for processing, not a operational start of the activity.",
+        "type": "string"
+      },
+      "end": {
+        "description": "Either date referring to exact activity end or end criteria, e.g. end of the project, expiry of an agreement covering the activity.",
+        "type": "string"
+      },
+      "controllers" : {
+        "description": "All parties acting as (Joint-)controllers (including the reporting institution) for the activity. If your role is processor, include your controllers.",
+        "type" : "array",
+        "items" : {
+          "$ref" : "organization_schema.json#"
+        }
+      },
+      "processors" : {
+        "description": "All parties acting as Processors (including the reporting institution) for the activity. If a processor is defined for this activity. this list should include all your (sub)processors.",
+        "type" : "array",
+        "items" : {
+          "$ref" : "organization_schema.json#"
+        }
+      },
+      "DPIA" : {
+        "description": "Link to a Data Protection Impact Assessment or justification why the DPIA is not performed.",
+        "type" :  "string"
+      },
+      "evidenceOfLawfulness" : {
+        "description": "Brief description of legal grounds for given activity. This field contains full description of legal context. What are the responsibilities of parties performing the activity and how are the responsibilities established (e.g. links to existing agreements, internal institutional guidelines, Terms of Service",
+        "type" : "string"
+      },
+      "purpose": {
+        "type": "string",
+        "description": "The purpose of the data processing activity"
+      },
+      "data" : {
+        "description": "Data processed in scope of the activity",
+        "type" : "array",
+        "items" : {
+          "$ref" : "data_schema.json#"
+        }
+      }
+    },
+    "additionalProperties": false,
+    "required": [ "name", "start", "end",  "controllers", "processors", "DPIA", "evidence_of_lawfulness", "purpose", "data" ]
+    
+  }
+  

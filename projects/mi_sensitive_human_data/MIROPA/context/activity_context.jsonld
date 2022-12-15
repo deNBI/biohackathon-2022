@@ -1,0 +1,18 @@
+{
+    "@context": {
+     "name": {
+       "@id": "https://schema.org/name",
+       "@type": "@id"
+      },
+      "purpose": {
+        "@id": "https://w3id.org/dpv#Purpose"
+      },
+      "controllers": {
+        "@id": "https://w3id.org/dpv#LegalEntity"
+      },
+      "processors": {
+        "@id": "https://w3id.org/dpv#LegalEntity"
+      }
+    }
+  }
+  
