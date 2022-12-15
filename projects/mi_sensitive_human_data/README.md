@@ -11,8 +11,8 @@ Research data from human subjects that is not of an anonymized nature is conside
 ELIXIR Luxembourg and ELIXIR Switzerland are two ELIXIR nodes that have developed open source tools to assist biomedical research teams with GDPR record keeping. Since a couple of years, these tools, namely DAISY and ERPA, have been in active use in respective ELIXIR nodes and some others. Despite serving a similar GDPR requirement, these two tools have different target end users and consequently differences in the information they ultimately capture. The development teams of the two tools have been in contact since early days and have been monitoring the direction each tool is taking.
 
 In this project we propose the following:
-(1) perform a critical and comparative review of the underlying information models of DAISY and ERPA. During this review we will take into account past experience in using our tools as well as guidelines which have shaped our tools in the first place, i.e guidance on GDPR record keeping published by relevant sector-specific, national and EU authorities.
-(2) create a checklist for the reporting of biomedical research activities and the human datasets that they have produced. We will develop this guideline in the style of Minimum Information Checklists that researchers are already familiar with.
+- perform a critical and comparative review of the underlying information models of [DAISY](https://github.com/elixir-luxembourg/daisy) and [ERPA](https://gitlab.sib.swiss/clinbio/erpa-app). During this review we will take into account past experience in using our tools as well as guidelines which have shaped our tools in the first place, i.e guidance on GDPR record keeping published by relevant sector-specific, national and EU authorities.
+- create a checklist for the reporting of biomedical research activities and the human datasets that they have produced. We will develop this guideline in the style of [Minimum Information Checklists](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2771753/) that researchers are already familiar with.
 
 We foresee that the produced checklist can be used on its own for the manual reporting of projects and resulting human datasets, particularly in scenarios where the data is to be shared for secondary use. In addition, the guideline can be picked up by the developer teams of DAISY and ERPA to eventually upgrade them and introduce new interoperability features into these tools.
 
@@ -28,11 +28,14 @@ Provide a list of topics of your project
 
 * Research support staff responsible for GDPR compliance
 * Researchers processing sensitive data
+* Researchers with knowledge of JSON schema and JSON-LD
 * 
 
 ## Hacking topics
 
-* Topic 1
+* Intersaction of DAISY, ERPA, ICO and CNIL model - core model
+* JSON schema of core model
+* JSON-LD of core model
 
 ## Communication
 
