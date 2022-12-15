@@ -27,16 +27,21 @@
       ]
     },
      "technical_safeguards": {
-      "description": "",
+      "description": "Technical data protection measures adopted for data transfer e.g. end-to-end encryption, certified transfer channel.",
       "type": ["string", "null"]
     },
      "organisational_safeguards": {
-      "description": "",
+      "description": "Organisational data protection measures adopted for data transfer e.g. policies, staff training.)",
       "type": ["string", "null"]
     },
      "legal_safeguards": {
-      "description": "",
+      "description": "Legal framework that acts as a safeguard for the transfer e.g. standard contractual clauses, Binding corporate rules, Country with an adequacy decision, Code of conduct, Certifications, Derogations (Article 49).",
       "type": ["string", "null"]
+    },
+     "agreement": {
+      "description": "URL link to reach the agreements, this could be a contracts managements system or similar.",
+      "type": "string",
+      "format": "uri"
     }
   }
 }
