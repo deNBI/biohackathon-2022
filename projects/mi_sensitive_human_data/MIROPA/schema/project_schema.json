@@ -1,36 +1,54 @@
 {
-  "$id": "https://w3id.org/dats/schema/data_standard_schema.json",
+  "$id": "https://some.where/project_schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
-  "title": "GDPR ROPA project",
+  "title": "MIROPA project",
   "description": "A research project that handles sensitive human data.",
   "type": "object",
   "properties": {
     "@context": {
-      Here may be dragons.
+      "description": "The JSON-LD context",
+      "anyOf": [
+	{
+          "type": "string"
+	},
+	{
+          "type": "object"
+	},
+	{
+          "type": "array"
+	}
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "const": "Project"
     }
-    
-    
     "name": {
       "description": "The name of the project.",
       "type": "string"
     },
-  	"acronym": {
+    "acronym": {
       "description": "The acronym of the project.",
       "type": "string"
-	  },
+    },
     "description": {
       "description": "The description of the project.",
       "type": "string"
     },
-    "external_identifiers": {
-      "description": "Accession numbers for the research study. ",
+    "externalIdentifiers": {
+      "description": "Accession numbers for the research study.",
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uri"
+	"type": "string",
+	"format": "uri"
       }
     },
-    "ethics_approval": {
+    "ethicsApproval": {
       "description": "Reference number for the of ethics approval and the issuing body of the approval national ethics body or IRB."
       "type": "string"
     };
@@ -38,28 +56,29 @@
       "description": "List of contacts for this project.",
       "type": "array",
       "items" : {
-        "$ref": "https://schema.org/Person"
+        "$ref": "person_schema.json#"
       }
     },
-    "responsible_contacts": {
+    "responsibleContacts": {
       "description": "List of responsible contacts as defined by GDPR, such as DPOs, legal representative, etc.",
       "type": "array",
       "items" : {
-        "$ref": "https://schema.org/Person"
+        "$ref": "person_schema.json#"
       }
     },
-    "institution": {
-      "description": 
-    }, "https://schema.org/Organization",
-	"start_date": {
-    "description": "The start date of the project.",
-    "type": "date"
-  },
-	"end_date": {
-    "description": "The estimated end date of the project.",
-    "type": "date"
+    "organization": {
+	"description": "",
+	"$ref": "organization_schema.json#"
+    }, 
+    "startDate": {
+      "description": "The start date of the project.",
+      "type": "date"
+    },
+    "endDate": {
+      "description": "The estimated end date of the project.",
+      "type": "date"
+    }
   }
-  
   "additionalProperties": false,
   "required":["name", "contacts", "responsible_contacts", "start_date", "end_date"]
 }
