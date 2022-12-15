@@ -1,0 +1,44 @@
+{
+  "$id": "https://raw.githubusercontent.com/vildead/biohackathon-2022/main/projects/mi_sensitive_human_data/MIROPA/schema/ropa_disclosure_schema.json",
+  "title": "Data disclosure  schema",
+  "description": "A JSON Schema for describing the data disclosure section for a MiROPA compliant a GDPR ROPA record.",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/vildead/biohackathon-2022/main/projects/mi_sensitive_human_data/MIROPA/schema/core.json"
+    }
+  ],
+  "properties": {
+    "name": {
+      "description": "Data protection authorities recommend that organisations list not only the recipients of data transfers outside the organisation but also the details of the internal groups or persons having access to the processing’s data. (internal organizational unit, processor, third country partner,)",
+      "type": ["string", "null"]
+    },
+    "country_code": {
+      "title": "ISO 3166-1 Alpha-2 Country code",
+      "description": "A valid 2-digit ISO country code (ISO 3166-1 alpha-2), or, an array of valid ISO codes.",
+      "oneOf": [
+        { "type": "string", "pattern": "^[A-Z]{2}$" },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+        }
+      ]
+    },
+     "technical_safeguards": {
+      "description": "",
+      "type": ["string", "null"]
+    },
+     "organisational_safeguards": {
+      "description": "",
+      "type": ["string", "null"]
+    },
+     "legal_safeguards": {
+      "description": "",
+      "type": ["string", "null"]
+    }
+  }
+}
+
+    
