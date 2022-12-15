@@ -1,0 +1,84 @@
+{
+  "$id": "https://some.where/project_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "MIROPA project",
+  "description": "A research project that handles sensitive human data.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+	{
+          "type": "string"
+	},
+	{
+          "type": "object"
+	},
+	{
+          "type": "array"
+	}
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "const": "Project"
+    }
+    "name": {
+      "description": "The name of the project.",
+      "type": "string"
+    },
+    "acronym": {
+      "description": "The acronym of the project.",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the project.",
+      "type": "string"
+    },
+    "externalIdentifiers": {
+      "description": "Accession numbers for the research study.",
+      "type": "array",
+      "items": {
+	"type": "string",
+	"format": "uri"
+      }
+    },
+    "ethicsApproval": {
+      "description": "Reference number for the of ethics approval and the issuing body of the approval national ethics body or IRB."
+      "type": "string"
+    };
+    "contacts": {
+      "description": "List of contacts for this project.",
+      "type": "array",
+      "items" : {
+        "$ref": "person_schema.json#"
+      }
+    },
+    "responsibleContacts": {
+      "description": "List of responsible contacts as defined by GDPR, such as DPOs, legal representative, etc.",
+      "type": "array",
+      "items" : {
+        "$ref": "person_schema.json#"
+      }
+    },
+    "organization": {
+	"description": "",
+	"$ref": "organization_schema.json#"
+    }, 
+    "startDate": {
+      "description": "The start date of the project.",
+      "type": "date"
+    },
+    "endDate": {
+      "description": "The estimated end date of the project.",
+      "type": "date"
+    }
+  }
+  "additionalProperties": false,
+  "required":["name", "contacts", "responsible_contacts", "start_date", "end_date"]
+}
