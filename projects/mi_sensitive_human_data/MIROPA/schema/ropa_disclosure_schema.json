@@ -1,7 +1,7 @@
 {
   "$id": "https://some.where/ropa_disclosure_schema.json",
-  "title": "MiROPA data disclosure schema",
-  "description": "A JSON Schema for describing the data disclosure section for a MiROPA compliant a GDPR ROPA record.",
+  "title": "MIROPA data disclosure schema",
+  "description": "A JSON Schema for describing the data disclosure section for a MIROPA compliant a GDPR ROPA record.",
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "object",
   "properties": {
