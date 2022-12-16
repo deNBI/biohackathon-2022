@@ -2,7 +2,7 @@
   "$id": "http://some-github-repo.url/schemas/data",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "MIROPA schema for Data entity",
-  "description": "Sensitive human data as defined by GDPR",
+  "description": "Specification of personal data processed.",
   "type": "object",
   "properties": {
     "@context": {
@@ -29,31 +29,26 @@
       "type": "string",
       "const": "Data"
     },
-    "standardPersonalData": {
-      "description": "  Any information which are related to an identified or identifiable natural person (Art. 4 (1) GDPR) .",
-      "type": "array",
-      "items": {
-        "$ref": "person_schema.json#"
-      }
-    },
-    "specialCategoryOfPersonalData": {
-      "description": "Sensitive Personal Data whose use requires specific legal permission or justification such as genetic data, biometric data (where this is used for identification purposes), health data, etc.",
+    "categoryOfPersonalData": {
+      "description": "Relevant overarching categories under consideration of GDPR Art. 9.1 and Art. 10.",
       "type": "array",
       "items": {
         "type": "string",
         "enum": [
-          "Genetic",
-          "Biometric",
-          "Health",
-          "Sexual orientation",
-          "Convictions",
-          "Race",
-          "Other"
+          "Standard personal data",
+          "Special category",
+          "Racial or ethnic origin",
+          "Genetic data",
+          "Biometric data for the purpose of uniquely identifying a natural person",
+          "Data concerning health",
+          "Data concerning a natural person’s sex life or sexual orientation",
+          "Data relating to criminal convictions and offences",
+          "Other special categories of data (e.g. molecular data that can give indication on a person's health)"
         ]
       }
     },
     "categoryOfDataSubjects": {
-      "description": "Category of individuals whose personal data is being processed, depending on their role in the activity. This includes special data subjetcs (minors, people with dementia)",
+      "description": "Category of individuals whose personal data is being processed, depending on their role in the activity. This includes special data subjects (minors, people with dementia)",
       "type": "string"
     },
     "tomsDesciption": {
