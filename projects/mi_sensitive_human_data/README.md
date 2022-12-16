@@ -11,8 +11,8 @@ Research data from human subjects that is not of an anonymized nature is conside
 ELIXIR Luxembourg and ELIXIR Switzerland are two ELIXIR nodes that have developed open source tools to assist biomedical research teams with GDPR record keeping. Since a couple of years, these tools, namely DAISY and ERPA, have been in active use in respective ELIXIR nodes and some others. Despite serving a similar GDPR requirement, these two tools have different target end users and consequently differences in the information they ultimately capture. The development teams of the two tools have been in contact since early days and have been monitoring the direction each tool is taking.
 
 In this project we propose the following:
-(1) perform a critical and comparative review of the underlying information models of DAISY and ERPA. During this review we will take into account past experience in using our tools as well as guidelines which have shaped our tools in the first place, i.e guidance on GDPR record keeping published by relevant sector-specific, national and EU authorities.
-(2) create a checklist for the reporting of biomedical research activities and the human datasets that they have produced. We will develop this guideline in the style of Minimum Information Checklists that researchers are already familiar with.
+- perform a critical and comparative review of the underlying information models of [DAISY](https://github.com/elixir-luxembourg/daisy) and [ERPA](https://gitlab.sib.swiss/clinbio/erpa-app). During this review we will take into account past experience in using our tools as well as guidelines which have shaped our tools in the first place, i.e guidance on GDPR record keeping published by relevant sector-specific, national and EU authorities.
+- create a checklist for the reporting of biomedical research activities and the human datasets that they have produced. We will develop this guideline in the style of [Minimum Information Checklists](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2771753/) that researchers are already familiar with.
 
 We foresee that the produced checklist can be used on its own for the manual reporting of projects and resulting human datasets, particularly in scenarios where the data is to be shared for secondary use. In addition, the guideline can be picked up by the developer teams of DAISY and ERPA to eventually upgrade them and introduce new interoperability features into these tools.
 
@@ -28,21 +28,29 @@ Provide a list of topics of your project
 
 * Research support staff responsible for GDPR compliance
 * Researchers processing sensitive data
-* 
+* Researchers with knowledge of JSON schema and JSON-LD
 
 ## Hacking topics
 
-* Topic 1
+* Comparative review of existing tools:
+  *  [DAISY](https://github.com/elixir-luxembourg/daisy) (biotools:Data_Information_System_DAISY)
+  *  [ERPA](https://gitlab.sib.swiss/clinbio/erpa/erpa-app)
+  *  ROPA spreadsheet provided by [Information Commissioner's Office](https://ico.org.uk/) UK
+  *  ROPA spreadsheet provided by [CNIL](https://www.cnil.fr) FR
+* JSON schema of core model and context mapping
 
 ## Communication
 
-Main channel: [Biohackaton Slack](https://join.slack.com/t/elixir-deworkspace/shared_invite/zt-1l6ku2o42-tqtThD8JgTYV93NaQ~SjFQ) workspace - channel **#checklist_for_human_data** 
+Main channel: [Biohackaton Slack](https://join.slack.com/t/elixir-deworkspace/shared_invite/zt-1l6ku2o42-tqtThD8JgTYV93NaQ~SjFQ) workspace - channel **#checklist_for_human_data**
 
 Main contact: Vilem Ded <vilem.ded@uni.lu>
 
 ## Possible outcomes
 
 * Minimal Information about Record Of Processing Activities (MIROPA)
+
+The current content of this repository is work done during the hackaton. The development of MIROPA will continue in dedicated repository hosted under Elixir Luxembourg organization. For more details, see [MIROPA](https://github.com/elixir-luxembourg/MIROPA) repository.
+
 
 The [de.NBI / ELIXIR-DE BioHackathon
 IP disclaimer][ip] applies.
