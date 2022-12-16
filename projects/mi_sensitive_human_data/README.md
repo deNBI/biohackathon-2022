@@ -29,23 +29,28 @@ Provide a list of topics of your project
 * Research support staff responsible for GDPR compliance
 * Researchers processing sensitive data
 * Researchers with knowledge of JSON schema and JSON-LD
-* 
 
 ## Hacking topics
 
-* Intersaction of DAISY, ERPA, ICO and CNIL model - core model
-* JSON schema of core model
-* JSON-LD of core model
+* Comparative review of existing tools:
+  *  [DAISY](https://github.com/elixir-luxembourg/daisy) (biotools:Data_Information_System_DAISY)
+  *  [ERPA](https://gitlab.sib.swiss/clinbio/erpa/erpa-app)
+  *  ROPA spreadsheet provided by [Information Commissioner's Office](https://ico.org.uk/) UK
+  *  ROPA spreadsheet provided by [CNIL](https://www.cnil.fr) FR
+* JSON schema of core model and context mapping
 
 ## Communication
 
-Main channel: [Biohackaton Slack](https://join.slack.com/t/elixir-deworkspace/shared_invite/zt-1l6ku2o42-tqtThD8JgTYV93NaQ~SjFQ) workspace - channel **#checklist_for_human_data** 
+Main channel: [Biohackaton Slack](https://join.slack.com/t/elixir-deworkspace/shared_invite/zt-1l6ku2o42-tqtThD8JgTYV93NaQ~SjFQ) workspace - channel **#checklist_for_human_data**
 
 Main contact: Vilem Ded <vilem.ded@uni.lu>
 
 ## Possible outcomes
 
 * Minimal Information about Record Of Processing Activities (MIROPA)
+
+The current content of this repository is work done during the hackaton. The development of MIROPA will continue in dedicated repository hosted under Elixir Luxembourg organization. For more details, see [MIROPA](https://github.com/elixir-luxembourg/MIROPA) repository.
+
 
 The [de.NBI / ELIXIR-DE BioHackathon
 IP disclaimer][ip] applies.
