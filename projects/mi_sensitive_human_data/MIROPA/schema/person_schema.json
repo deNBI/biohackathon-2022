@@ -8,47 +8,54 @@
     "@context": {
       "description": "The JSON-LD context",
       "anyOf": [
-	{
+        {
           "type": "string"
-	},
-	{
+        },
+        {
           "type": "object"
-	},
-	{
+        },
+        {
           "type": "array"
-	}
+        }
       ]
     },
     "@id": {
       "description": "The JSON-LD identifier",
-      "type": "string", "format": "uri"
+      "type": "string",
+      "format": "uri"
     },
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
       "const": "Person"
     },
-      "givenName": {
-	  "description": "The given name of the person.",
-	  "type": "string"
-      },
-      "familyName": {
-	  "description": "The family name of the person.",
-	  "type": "string"
-      },
-      "address": {
-	  "description": "The address of the person.",
-	  "type": "string"
-      },
-      "telephone": {
-	  "description": "The telephone numer of the person.",
-	  "type": "string"
-      },
-      "email": {
-	  "description": "The email adress of the person.",
-	  "type": "string"
-      }
-  }
-    "additionalProperties": false,
-    "required":["name", "contacts", "responsible_contacts", "start_date", "end_date"]
+    "givenName": {
+      "description": "The given name of the person.",
+      "type": "string"
+    },
+    "familyName": {
+      "description": "The family name of the person.",
+      "type": "string"
+    },
+    "address": {
+      "description": "The address of the person.",
+      "type": "string"
+    },
+    "telephone": {
+      "description": "The telephone number of the person.",
+      "type": "string"
+    },
+    "email": {
+      "description": "The email address of the person.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "contacts",
+    "responsible_contacts",
+    "start_date",
+    "end_date"
+  ]
 }
