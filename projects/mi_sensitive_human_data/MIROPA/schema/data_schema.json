@@ -1,87 +1,78 @@
 {
-    "$id": "http://some-github-repo.url/schemas/data",
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "MIROPA schema for Data entity",
-    "description": " Sensitive human data as defined by GDPR",
-    "type": "object",
-    "properties": {
-        "@context": {
-            "description": "The JSON-LD context",
-            "anyOf": [
-                {
-                      "type": "string"
-                },
-                {
-                      "type": "object"
-                },
-                {
-                      "type": "array"
-                }
-                  ]
-          },
-          "@id": {
-            "description": "The JSON-LD identifier",
-            "type": "string",
-            "format": "uri" 
-          },
-          "@type": {
-            "description": "The JSON-LD type",
-            "type": "string",
-            "const": "Data"
-          },
-      
-      
-      "category_of_personal_data": {
-        "description": "  Any information which are related to an identified or identifiable natural person (Art. 4 (1) GDPR) .",
-        "type": "array",
-        "items" : {
-         "$ref": "person_schema.json#"
+  "$id": "http://some-github-repo.url/schemas/data",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "MIROPA schema for Data entity",
+  "description": "Sensitive human data as defined by GDPR",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
         }
-      },
-      
-      "special _category_of_personal_data": {
-        "description": "Sensitive Personal Data whose use requires specific legal permission or justification such as genetic data, biometric data (where this is used for identification purposes), health data, etc.",
-       
-        "type": "array",
-        "items": {
-            "type": "string",
-            "enum": [
-              "Genetic",
-              "Biometric",
-              "Health",
-              "Sexual orientation",
-              "Convictions",
-              "Race",
-              "Other"
-            ]
-        
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "const": "Data"
+    },
+    "standardPersonalData": {
+      "description": "  Any information which are related to an identified or identifiable natural person (Art. 4 (1) GDPR) .",
+      "type": "array",
+      "items": {
+        "$ref": "person_schema.json#"
       }
     },
-      
-      "category_of_data_subjects": {
-        "description": "Category of individuals whose personal data is being processed, depending on their role in the activity. This includes special data subjetcs (minors, people with dementia)",
-        "type": "string"
-      },
-      
-  
-        "TOMs_desciption": {
-        "description": "Technical and organisational measures required/followed when processing data, including data de-indentification",
-        "type": "string"
-        },
-      
-      "disclosure": {
-        "description": "Entities to whom the personal data have been or will be disclosed including recipients in third countries or international organisations",
-        "type": "array",
-        "items" : {
-            "$ref" : "organization_schema.json#"
-          }
-        }
-     
-      },
-      
-    
-    "additionalProperties": false,
-    "required":["category_of_personal_data", "special_category_of_personal_data", "category_of_data_subjects", "TOMs_description","disclosure"]
-  }
-
-  
+    "specialCategoryOfPersonalData": {
+      "description": "Sensitive Personal Data whose use requires specific legal permission or justification such as genetic data, biometric data (where this is used for identification purposes), health data, etc.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Genetic",
+          "Biometric",
+          "Health",
+          "Sexual orientation",
+          "Convictions",
+          "Race",
+          "Other"
+        ]
+      }
+    },
+    "categoryOfDataSubjects": {
+      "description": "Category of individuals whose personal data is being processed, depending on their role in the activity. This includes special data subjetcs (minors, people with dementia)",
+      "type": "string"
+    },
+    "tomsDesciption": {
+      "description": "Technical and organisational measures required/followed when processing data, including data de-indentification",
+      "type": "string"
+    },
+    "disclosure": {
+      "description": "Entities to whom the personal data have been or will be disclosed including recipients in third countries or international organisations",
+      "type": "array",
+      "items": {
+        "$ref": "organization_schema.json#"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "standardPersonalData",
+    "specialCategoryOfPersonalData",
+    "categoryOfDataSubjects",
+    "TOMs_description"
+  ]
+}
