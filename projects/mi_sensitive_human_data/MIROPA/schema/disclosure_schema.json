@@ -9,7 +9,7 @@
       "description": "Data protection authorities recommend that organisations list not only the recipients of data transfers outside the organisation but also the details of the internal groups or persons having access to the processing’s data. (internal organizational unit, processor, third country partner,)",
       "type": ["string", "null"]
     },
-    "country_code": {
+    "countryCode": {
       "title": "ISO 3166-1 Alpha-2 Country code",
       "description": "A valid 2-digit ISO country code (ISO 3166-1 alpha-2), or, an array of valid ISO codes.",
       "oneOf": [
@@ -21,15 +21,15 @@
         }
       ]
     },
-     "technical_safeguards": {
+     "technicalSafeguards": {
       "description": "Technical data protection measures adopted for data transfer e.g. end-to-end encryption, certified transfer channel.",
       "type": ["string", "null"]
     },
-     "organisational_safeguards": {
+     "organisationalSafeguards": {
       "description": "Organisational data protection measures adopted for data transfer e.g. policies, staff training.)",
       "type": ["string", "null"]
     },
-     "legal_safeguards": {
+     "legalSafeguards": {
       "description": "Legal framework that acts as a safeguard for the transfer e.g. standard contractual clauses, Binding corporate rules, Country with an adequacy decision, Code of conduct, Certifications, Derogations (Article 49).",
       "type": ["string", "null"]
     },
