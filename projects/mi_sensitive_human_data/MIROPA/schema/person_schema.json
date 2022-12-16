@@ -52,10 +52,8 @@
   },
   "additionalProperties": false,
   "required": [
-    "name",
-    "contacts",
-    "responsible_contacts",
-    "start_date",
-    "end_date"
+    "givenName", 
+    "familyName",
+    "email"
   ]
 }

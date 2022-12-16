@@ -74,12 +74,12 @@
     "startDate": {
       "description": "The start date of the project.",
       "type": "string",
-      "format": "date-time"
+      "format": "date"
     },
     "endDate": {
       "description": "The estimated end date of the project.",
       "type": "string",
-      "format": "date-time"
+      "format": "date"
     }
   },
   "additionalProperties": false,
@@ -87,7 +87,7 @@
     "name",
     "contacts",
     "responsible_contacts",
-    "start_date",
-    "end_date"
+    "startDate",
+    "endDate"
   ]
 }
