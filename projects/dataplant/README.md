@@ -1,47 +1,45 @@
 # DataPLANT - Facilitating Research Data Management to combat the reproducibility crisis
 
-Please adapt the following template to your needs:
-
-This page describes the "NAME OF YOUR PROJECT" project for the 1st de.NBI /
+This page describes the "DataPLANT - Facilitating Research Data Management to combat the reproducibility crisis" project for the 1st de.NBI /
 ELIXIR Germany BioHackathon.
 
 ## Abstract
 
-Please add a short abstract of your project here, e.g. from your project application.
+Well maintained research data according to the FAIR principles will benefit everyone. To push towards this goal, we at DataPlant propose the Annotated Research Context (ARC), a FAIR research object based on exisiting standards like ISA, CWL and RO-Crate.
+
+A lot of effort went into writing tools and documentation for creating ARCs. Here at the Hackathon, we aim to further integrate these tools with the biological research community, providing our interfaces through openly available REST APIs. 
+
+Additionally, making the annotation and storing of experimental data as a researcher as frictionless as possible is another goal. For this, findability and quality of the training materials is being improved.
 
 ## Topics
 
-Provide a list of topics of your project
-
-* Cell Clasification
-* Machine Learning
-* ...
+* Plant Sciences
+* ARC
+* ISA
+* Swate
+* Documentation
+* Templates
+* Interoperability
+* MIAPPE
 
 ## Expected audience
 
-Add your expected audience / contributors here:
-
-* Bioinformaticians with an interest in ...
-* Biologists with a background in ...
-
-## Hacking topics
-
-Add your hacking topics here.
-
-* Topic 1
+* Bioinformaticians with an interest in FAIR Data management
+* Plant biologists
 
 ## Communication
 
-Add information about the project slack channel here and / or contact information
-
-* Project lead: Your Name <your.name@....>
+* Project lead: Lukas Weil <weil@bio.uni-kl.de>
+* Project lead: Elisa Senger <e.senger@fz-juelich.de>
 
 ## Possible outcomes
 
-* Add possible outputcomes here 
+* Functioning integration of MIAPPE wizard with Swate ontology service
+* Functioning integration of MIAPPE wizard with ArcCommander import functionality
+* MIAPPE template for Swate
+* Centralized DataPlant tool documentation
 
 The [de.NBI / ELIXIR-DE BioHackathon
 IP disclaimer][ip] applies.
 
 [docs]: <https://denbi.de>
-
